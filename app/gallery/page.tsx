@@ -108,26 +108,28 @@ export default function Gallery() {
             <p className="text-2xl md:text-3xl mb-8 text-gray-100 font-medium drop-shadow-md">
               View our showcase of premium hardwood floor transformations
             </p>
-            <div className="flex flex-wrap gap-6 items-center">
-              <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <Award className="w-6 h-6 text-green-400" />
-                <div>
-                  <p className="text-white font-semibold">Premium Quality</p>
-                  <p className="text-sm text-gray-200">Top-grade materials</p>
+            <div className="flex flex-col gap-4">
+              <a
+                href="tel:+19136332425"
+                className="w-full md:w-auto inline-block bg-green-600 text-white px-10 py-5 rounded-xl text-2xl font-bold hover:bg-green-700 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105 text-center mb-2 md:mb-4"
+              >
+                Get Free Quote Now
+              </a>
+              {/* Feature blocks - Smaller on mobile */}
+              <div className="grid grid-cols-2 gap-1.5 md:flex md:gap-4">
+                <div className="bg-black/30 backdrop-blur-sm px-2.5 py-2 md:px-6 md:py-3 rounded-lg">
+                  <p className="text-sm md:text-lg font-semibold flex items-center gap-1 md:gap-2">
+                    <span className="text-green-400 text-xs md:text-base">✓</span>
+                    Licensed & Insured
+                  </p>
+                  <p className="text-xs md:text-base text-gray-200">Family Owned</p>
                 </div>
-              </div>
-              <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <Shield className="w-6 h-6 text-green-400" />
-                <div>
-                  <p className="text-white font-semibold">Licensed & Insured</p>
-                  <p className="text-sm text-gray-200">100% Guaranteed</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg">
-                <Clock className="w-6 h-6 text-green-400" />
-                <div>
-                  <p className="text-white font-semibold">Fast Completion</p>
-                  <p className="text-sm text-gray-200">On-time delivery</p>
+                <div className="bg-black/30 backdrop-blur-sm px-2.5 py-2 md:px-6 md:py-3 rounded-lg">
+                  <p className="text-sm md:text-lg font-semibold flex items-center gap-1 md:gap-2">
+                    <span className="text-yellow-400 text-xs md:text-base">⚡</span>
+                    Fast Service
+                  </p>
+                  <p className="text-xs md:text-base text-gray-200">Quick Response</p>
                 </div>
               </div>
             </div>
