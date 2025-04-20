@@ -176,24 +176,34 @@ const blogPostsData = {
 
 type BlogPostSlug = keyof typeof blogPostsData;
 
+interface RelatedPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  image: string;
+  slug: string;
+}
+
 // Get post by slug
 const getPostBySlug = (slug: BlogPostSlug) => {
   const post = blogPostsData[slug];
   if (!post) return null;
 
   // Get related posts data
-  const relatedPosts = post.relatedPosts.map(relatedSlug => {
-    const relatedPost = blogPostsData[relatedSlug as BlogPostSlug];
-    if (!relatedPost) return null;
-    
-    return {
-      id: relatedSlug,
-      title: relatedPost.title,
-      excerpt: relatedPost.content.split('</p>')[0].replace(/<[^>]+>/g, '').slice(0, 120) + '...',
-      image: relatedPost.heroImage,
-      slug: relatedSlug
-    };
-  }).filter(Boolean);
+  const relatedPosts: RelatedPost[] = post.relatedPosts
+    .map(relatedSlug => {
+      const relatedPost = blogPostsData[relatedSlug as BlogPostSlug];
+      if (!relatedPost) return null;
+      
+      return {
+        id: relatedSlug,
+        title: relatedPost.title,
+        excerpt: relatedPost.content.split('</p>')[0].replace(/<[^>]+>/g, '').slice(0, 120) + '...',
+        image: relatedPost.heroImage,
+        slug: relatedSlug
+      };
+    })
+    .filter((post): post is RelatedPost => post !== null);
 
   return {
     ...post,
