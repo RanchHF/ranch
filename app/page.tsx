@@ -60,7 +60,7 @@ export default function Home() {
       <section className="bg-gray-100 py-16">
         <div className="container mx-auto px-4">
           {/* Services Title - Now responsive */}
-          <div className="max-w-2xl mx-auto mb-12 text-center">
+          <div className="max-w-2xl mx-auto mb-16 text-center">
             <div className="bg-white rounded-xl shadow-lg py-8 px-6">
               <span className="text-green-600 font-semibold block mb-2">Our Expertise</span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
@@ -72,31 +72,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Special Offer Banner */}
+          {/* Services Grid */}
           <div className="max-w-6xl mx-auto">
-            <div className="bg-green-600 text-white p-6 rounded-lg mb-12 shadow-lg">
-              <div className="flex flex-col md:flex-row items-center justify-between">
-                <div className="flex items-center gap-4 mb-4 md:mb-0">
-                  <div className="bg-white/20 rounded-full p-3">
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-lg font-bold">Limited Time Offer</p>
-                    <p className="text-sm">Save 15% on Hardwood Floor Installation</p>
-                  </div>
-                </div>
-                <a
-                  href="tel:+19136332425"
-                  className="bg-white text-green-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-200 text-center w-full md:w-auto"
-                >
-                  Claim Offer Now
-                </a>
-              </div>
-            </div>
-
-            {/* Services Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
               {/* Unfinished Hardwood */}
               <div className="flex flex-col items-center">
