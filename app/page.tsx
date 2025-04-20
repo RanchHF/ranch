@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Image from 'next/image';
 import { Phone } from 'lucide-react';
-import PopupPromo from './components/PopupPromo';
 
 export default function Home() {
   return (
@@ -57,26 +56,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section with Floating Title */}
-      <div className="relative">
-        {/* Floating Services Title */}
-        <div className="absolute left-0 right-0 -top-12 z-20">
-          <div className="container mx-auto px-4">
-            <div className="bg-white rounded-xl shadow-xl py-8 px-6 max-w-2xl mx-auto text-center">
-              <span className="text-green-600 font-semibold mb-2 block">Our Expertise</span>
-              <h2 className="text-4xl font-bold text-gray-800">Premium Hardwood Floor Services</h2>
-              <p className="text-gray-600 mt-2">Elevating Homes with Timeless Elegance</p>
+      {/* Services Section with Responsive Title */}
+      <section className="bg-gray-100 py-16">
+        <div className="container mx-auto px-4">
+          {/* Services Title - Now responsive */}
+          <div className="max-w-2xl mx-auto mb-12 text-center">
+            <div className="bg-white rounded-xl shadow-lg py-8 px-6">
+              <span className="text-green-600 font-semibold block mb-2">Our Expertise</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+                Premium Hardwood Floor Services
+              </h2>
+              <p className="text-gray-600">
+                Elevating Homes with Timeless Elegance
+              </p>
             </div>
           </div>
-        </div>
 
-        {/* Services Content */}
-        <section id="services" className="bg-gray-100 pt-32 pb-16">
           {/* Special Offer Banner */}
-          <div className="container mx-auto px-4 max-w-6xl">
+          <div className="max-w-6xl mx-auto">
             <div className="bg-green-600 text-white p-6 rounded-lg mb-12 shadow-lg">
               <div className="flex flex-col md:flex-row items-center justify-between">
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 mb-4 md:mb-0">
                   <div className="bg-white/20 rounded-full p-3">
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -89,15 +89,15 @@ export default function Home() {
                 </div>
                 <a
                   href="tel:+19136332425"
-                  className="mt-4 md:mt-0 bg-white text-green-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-200"
+                  className="bg-white text-green-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-200 text-center w-full md:w-auto"
                 >
                   Claim Offer Now
                 </a>
               </div>
             </div>
 
-            {/* All Services Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 pt-8">
+            {/* Services Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
               {/* Unfinished Hardwood */}
               <div className="flex flex-col items-center">
                 <div className="relative w-full h-[250px] rounded-lg overflow-hidden group">
@@ -283,8 +283,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       {/* Testimonials Section */}
       <section className="py-16 bg-white">
@@ -403,7 +403,6 @@ export default function Home() {
         </div>
       </section>
 
-      <PopupPromo />
       <Footer />
     </main>
   );
