@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 import { Phone, Star, Shield, Clock, Award } from 'lucide-react';
+import ScrollToTop from '../components/ScrollToTop';
 
 // Dados da galeria otimizados com descrições persuasivas
 const galleryItems = [
@@ -235,6 +236,7 @@ export default function Gallery() {
       </section>
 
       <Footer />
+      <ScrollToTop />
     </main>
   );
 } 
