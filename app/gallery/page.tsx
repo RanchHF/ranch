@@ -77,7 +77,7 @@ export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
 
-  const categories = ['All', ...new Set(galleryItems.map(item => item.category))];
+  const categories = ['All', ...Array.from(new Set(galleryItems.map(item => item.category)))];
   const filteredItems = activeCategory === 'All' 
     ? galleryItems 
     : galleryItems.filter(item => item.category === activeCategory);
