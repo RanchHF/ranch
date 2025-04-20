@@ -30,7 +30,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
           <div className="w-full max-w-2xl text-white text-left md:text-left">
             <h1 className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight drop-shadow-lg text-center md:text-left">
-              Transform Your Space With Premium Hardwood Floors
+              Transform Your Space With Expert Craftsmanship
             </h1>
             <p className="text-xl md:text-3xl mb-6 md:mb-8 text-gray-100 font-medium drop-shadow-md text-center md:text-left">
               Expert installation, refinishing, and restoration with our 100% Satisfaction Guarantee
