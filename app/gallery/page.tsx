@@ -118,14 +118,14 @@ export default function Gallery() {
               {/* Feature blocks - Smaller on mobile */}
               <div className="grid grid-cols-2 gap-1.5 md:flex md:gap-4">
                 <div className="bg-black/30 backdrop-blur-sm px-2.5 py-2 md:px-6 md:py-3 rounded-lg">
-                  <p className="text-sm md:text-lg font-semibold flex items-center gap-1 md:gap-2">
+                  <p className="text-sm md:text-lg font-semibold flex items-center gap-1 md:gap-2 text-white">
                     <span className="text-green-400 text-xs md:text-base">✓</span>
                     Licensed & Insured
                   </p>
                   <p className="text-xs md:text-base text-gray-200">Family Owned</p>
                 </div>
                 <div className="bg-black/30 backdrop-blur-sm px-2.5 py-2 md:px-6 md:py-3 rounded-lg">
-                  <p className="text-sm md:text-lg font-semibold flex items-center gap-1 md:gap-2">
+                  <p className="text-sm md:text-lg font-semibold flex items-center gap-1 md:gap-2 text-white">
                     <span className="text-yellow-400 text-xs md:text-base">⚡</span>
                     Fast Service
                   </p>
