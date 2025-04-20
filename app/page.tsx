@@ -34,21 +34,28 @@ export default function Home() {
             <p className="text-2xl md:text-3xl mb-8 text-gray-100 font-medium drop-shadow-md">
               Expert installation, refinishing, and restoration with our 100% Satisfaction Guarantee
             </p>
-            <div className="flex flex-col md:flex-row gap-4 items-center">
+            <div className="flex flex-col gap-4">
               <a
                 href="tel:+19136332425"
                 className="w-full md:w-auto inline-block bg-green-600 text-white px-10 py-5 rounded-xl text-2xl font-bold hover:bg-green-700 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105 text-center"
               >
                 Get Free Quote Now
               </a>
-              <div className="flex items-center gap-4">
-                <div className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg">
-                  <p className="text-lg font-semibold">✓ Licensed & Insured</p>
-                  <p className="text-sm">Family Owned</p>
+              {/* Feature blocks - Adjusted for mobile */}
+              <div className="grid grid-cols-2 gap-2 md:flex md:gap-4">
+                <div className="bg-black/30 backdrop-blur-sm px-4 py-3 md:px-6 md:py-3 rounded-lg">
+                  <p className="text-base md:text-lg font-semibold flex items-center gap-2">
+                    <span className="text-green-400">✓</span>
+                    Licensed & Insured
+                  </p>
+                  <p className="text-sm md:text-base text-gray-200">Family Owned</p>
                 </div>
-                <div className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg">
-                  <p className="text-lg font-semibold">⚡ Fast Service</p>
-                  <p className="text-sm">Quick Response</p>
+                <div className="bg-black/30 backdrop-blur-sm px-4 py-3 md:px-6 md:py-3 rounded-lg">
+                  <p className="text-base md:text-lg font-semibold flex items-center gap-2">
+                    <span className="text-yellow-400">⚡</span>
+                    Fast Service
+                  </p>
+                  <p className="text-sm md:text-base text-gray-200">Quick Response</p>
                 </div>
               </div>
             </div>
