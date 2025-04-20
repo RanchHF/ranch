@@ -102,22 +102,22 @@ export default function Gallery() {
         </div>
         
         <div className="container mx-auto px-4 relative z-10 h-full flex flex-col justify-center">
-          <div className="w-full max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight drop-shadow-lg text-white text-center">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-lg text-white">
               Transform Your Space
             </h1>
-            <p className="text-xl md:text-3xl mb-6 md:mb-8 text-gray-100 font-medium drop-shadow-md text-center">
+            <p className="text-2xl md:text-3xl mb-8 text-gray-100 font-medium drop-shadow-md">
               View our showcase of premium hardwood floor transformations
             </p>
-            <div className="flex flex-col gap-4 items-center">
+            <div className="flex flex-col gap-4">
               <a
                 href="tel:+19136332425"
-                className="w-full md:w-auto inline-block bg-green-600 text-white px-8 md:px-10 py-4 md:py-5 rounded-xl text-xl md:text-2xl font-bold hover:bg-green-700 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105 text-center mb-2 md:mb-4"
+                className="w-full md:w-auto inline-block bg-green-600 text-white px-10 py-5 rounded-xl text-2xl font-bold hover:bg-green-700 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105 text-center mb-2 md:mb-4"
               >
                 Get Free Quote Now
               </a>
               {/* Feature blocks - Smaller on mobile */}
-              <div className="grid grid-cols-2 gap-1.5 md:flex md:gap-4 w-full md:w-auto">
+              <div className="grid grid-cols-2 gap-1.5 md:flex md:gap-4">
                 <div className="bg-black/30 backdrop-blur-sm px-2.5 py-2 md:px-6 md:py-3 rounded-lg">
                   <p className="text-sm md:text-lg font-semibold flex items-center gap-1 md:gap-2 text-white">
                     <span className="text-green-400 text-xs md:text-base">✓</span>

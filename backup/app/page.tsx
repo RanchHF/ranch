@@ -28,22 +28,22 @@ export default function Home() {
         
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
-          <div className="w-full max-w-2xl text-white text-left md:text-left">
-            <h1 className="text-4xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight drop-shadow-lg text-center md:text-left">
+          <div className="max-w-2xl text-white">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">
               Transform Your Space With Premium Hardwood Floors
             </h1>
-            <p className="text-xl md:text-3xl mb-6 md:mb-8 text-gray-100 font-medium drop-shadow-md text-center md:text-left">
+            <p className="text-2xl md:text-3xl mb-8 text-gray-100 font-medium drop-shadow-md">
               Expert installation, refinishing, and restoration with our 100% Satisfaction Guarantee
             </p>
-            <div className="flex flex-col gap-4 items-center md:items-start">
+            <div className="flex flex-col gap-4">
               <a
                 href="tel:+19136332425"
-                className="w-full md:w-auto inline-block bg-green-600 text-white px-8 md:px-10 py-4 md:py-5 rounded-xl text-xl md:text-2xl font-bold hover:bg-green-700 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105 text-center"
+                className="w-full md:w-auto inline-block bg-green-600 text-white px-10 py-5 rounded-xl text-2xl font-bold hover:bg-green-700 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105 text-center mb-2 md:mb-4"
               >
                 Get Free Quote Now
               </a>
               {/* Feature blocks - Smaller on mobile */}
-              <div className="grid grid-cols-2 gap-1.5 md:flex md:gap-4 w-full md:w-auto">
+              <div className="grid grid-cols-2 gap-1.5 md:flex md:gap-4">
                 <div className="bg-black/30 backdrop-blur-sm px-2.5 py-2 md:px-6 md:py-3 rounded-lg">
                   <p className="text-sm md:text-lg font-semibold flex items-center gap-1 md:gap-2">
                     <span className="text-green-400 text-xs md:text-base">✓</span>
