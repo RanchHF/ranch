@@ -172,16 +172,18 @@ const blogPostsData = {
     `,
     relatedPosts: ['why-hire-professional-installation', 'signs-floor-needs-refinishing']
   }
-};
+} as const;
+
+type BlogPostSlug = keyof typeof blogPostsData;
 
 // Get post by slug
-const getPostBySlug = (slug: string) => {
+const getPostBySlug = (slug: BlogPostSlug) => {
   const post = blogPostsData[slug];
   if (!post) return null;
 
   // Get related posts data
   const relatedPosts = post.relatedPosts.map(relatedSlug => {
-    const relatedPost = blogPostsData[relatedSlug];
+    const relatedPost = blogPostsData[relatedSlug as BlogPostSlug];
     if (!relatedPost) return null;
     
     return {
@@ -191,7 +193,7 @@ const getPostBySlug = (slug: string) => {
       image: relatedPost.heroImage,
       slug: relatedSlug
     };
-  }).filter(Boolean); // Remove any null values
+  }).filter(Boolean);
 
   return {
     ...post,
@@ -199,7 +201,7 @@ const getPostBySlug = (slug: string) => {
   };
 };
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+export default function BlogPost({ params }: { params: { slug: BlogPostSlug } }) {
   const post = getPostBySlug(params.slug);
 
   if (!post) {
