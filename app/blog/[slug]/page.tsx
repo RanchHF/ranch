@@ -190,7 +190,7 @@ const getPostBySlug = (slug: BlogPostSlug) => {
   if (!post) return null;
 
   // Get related posts data
-  const relatedPosts: RelatedPost[] = post.relatedPosts
+  const relatedPosts = post.relatedPosts
     .map(relatedSlug => {
       const relatedPost = blogPostsData[relatedSlug as BlogPostSlug];
       if (!relatedPost) return null;
@@ -203,7 +203,7 @@ const getPostBySlug = (slug: BlogPostSlug) => {
         slug: relatedSlug
       };
     })
-    .filter((post): post is RelatedPost => post !== null);
+    .filter((post): post is NonNullable<typeof post> => post !== null);
 
   return {
     ...post,
