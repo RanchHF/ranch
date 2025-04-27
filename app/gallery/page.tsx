@@ -71,6 +71,69 @@ const galleryItems = [
     image: '/images/archway-transition.jpg',
     featured: false,
     location: 'Mission Hills'
+  },
+  {
+    id: 8,
+    category: 'Staircase',
+    title: 'Premium Staircase Transformation',
+    description: 'Meticulously crafted hardwood treads paired with pristine white risers. Our attention to detail ensures every component is perfectly finished.',
+    image: '/images/gallery/staircase-transformation/escada1.jpg',
+    featured: true,
+    location: 'Mission Hills'
+  },
+  {
+    id: 9,
+    category: 'Staircase',
+    title: 'Elegant Staircase Detail',
+    description: 'Premium hardwood installation with expert craftsmanship. Each tread is carefully selected and finished to enhance the natural beauty of the wood.',
+    image: '/images/gallery/staircase-transformation/escada2.jpg',
+    featured: true,
+    location: 'Mission Hills'
+  },
+  {
+    id: 10,
+    category: 'Staircase',
+    title: 'Custom Staircase Design',
+    description: 'Superior quality hardwood treads with immaculate white risers. Our precision in every detail creates a timeless and elegant appearance.',
+    image: '/images/gallery/staircase-transformation/escada3.jpg',
+    featured: true,
+    location: 'Mission Hills'
+  },
+  {
+    id: 11,
+    category: 'Staircase',
+    title: 'Masterful Staircase Craftsmanship',
+    description: 'Exceptional attention to detail in every aspect. The perfect blend of premium materials and expert installation techniques.',
+    image: '/images/gallery/staircase-transformation/escada4.jpg',
+    featured: true,
+    location: 'Mission Hills'
+  },
+  {
+    id: 12,
+    category: 'Staircase',
+    title: 'Luxurious Staircase Finish',
+    description: 'Premium finish that protects while highlighting the natural grain of the hardwood. Every detail is executed with precision and care.',
+    image: '/images/gallery/staircase-transformation/escada5.jpg',
+    featured: true,
+    location: 'Mission Hills'
+  },
+  {
+    id: 13,
+    category: 'Staircase',
+    title: 'Classic Staircase Excellence',
+    description: 'Flawless craftsmanship showcasing the perfect harmony between hardwood treads and white risers. Every element is carefully considered.',
+    image: '/images/gallery/staircase-transformation/escada6.jpg',
+    featured: true,
+    location: 'Mission Hills'
+  },
+  {
+    id: 14,
+    category: 'Staircase',
+    title: 'Distinguished Staircase Design',
+    description: 'The epitome of quality craftsmanship. Our meticulous attention to detail and premium materials create a stunning architectural feature.',
+    image: '/images/gallery/staircase-transformation/escada7.jpg',
+    featured: true,
+    location: 'Mission Hills'
   }
 ];
 
